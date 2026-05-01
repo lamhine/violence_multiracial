@@ -25,12 +25,12 @@ age_levels_50plus <- c(
 re_abbrev <- c("AI", "API", "BAA", "HISP", "MULT", "WHITE", "TOTAL")
 
 re_labels <- c(
-  "AI"    = "AIAN",
-  "API"   = "API",
-  "BAA"   = "Black",
+  "AI"    = "NH AIAN",
+  "API"   = "NH API",
+  "BAA"   = "NH Black",
   "HISP"  = "Hispanic",
-  "MULT"  = "Multiracial",
-  "WHITE" = "White",
+  "MULT"  = "NH Multiracial",
+  "WHITE" = "NH White",
   "TOTAL" = "Total"
 )
 
@@ -40,13 +40,13 @@ re_groups <- unname(re_labels)
 # Line widths: Multiracial thicker for emphasis; colors use ggplot default
 # -------------------------------------------------------------------
 re_linewidth <- c(
-  "AIAN"        = 0.7,
-  "API"         = 0.7,
-  "Black"       = 0.7,
-  "Hispanic"    = 0.7,
-  "Multiracial" = 1.3,
-  "White"       = 0.7,
-  "Total"       = 0.7
+  "NH AIAN"        = 0.7,
+  "NH API"         = 0.7,
+  "NH Black"       = 0.7,
+  "Hispanic"       = 0.7,
+  "NH Multiracial" = 1.3,
+  "NH White"       = 0.7,
+  "Total"          = 0.7
 )
 
 # -------------------------------------------------------------------

@@ -1,11 +1,11 @@
 ---
 format:
   docx:
-    reference-doc: "/Users/lamhine/Documents/manuscript-templates/manuscript-reference.docx"
+    reference-doc: "/Users/lamhine/Documents/GitHub/manuscript-templates/manuscript-reference.docx"
     number-sections: false
     fig-dpi: 300
 bibliography: references.bib
-csl: "/Users/lamhine/Documents/manuscript-templates/american-medical-association.csl"
+csl: "/Users/lamhine/Documents/GitHub/manuscript-templates/american-medical-association.csl"
 link-citations: false
 link-bibliography: false
 execute:
@@ -98,7 +98,7 @@ lamhine\@stanford.edu
 
 **Figures:** 1
 
-**Financial support:** This research received funding from the Eunice Kennedy Shriver National Institute of Child Health and Human Development and the National Institutes of Health Office of the Director (DP2HD080350). JA is a Chan Zuckerberg Biohub-San Francisco Investigator. TLH did not receive direct funding for this paper.
+**Financial support:** This research received funding from the Eunice Kennedy Shriver National Institute of Child Health and Human Development and the National Institutes of Health Office of the Director (DP2HD080350). JA is a Biohub, San Francisco Investigator. TLH did not receive direct funding for this paper.
 
 **Prior presentation:** Accepted for poster presentation at the Society for Epidemiologic Research Annual Meeting, 2026.
 :::
@@ -115,11 +115,11 @@ lamhine\@stanford.edu
 ```
 # Introduction
 
-Violence against older adults is a growing public health concern. Between 2015 and 2022, U.S. emergency department visit rates for nonfatal assault among adults aged 60 years and older rose 31%, and homicide rates rose 26%, with an estimated annual economic cost of \$32.7 billion in 2022.[@peterson2024] Nationally, racial and ethnic disparities in nonfatal assault injury among older adults have been poorly characterized due to high levels of missing race and ethnicity data in the National Electronic Injury Surveillance System.[@logan2019] A recent analysis of assault injuries among women in California found that Multiracial women aged 65 years and older had the highest age-specific assault injury rates of any racial and ethnic group, exceeding Black women in this age range.[@liu2026] Whether this pattern extends to Multiracial men or varies across the older age range is unknown. We estimated rates of fatal and non-fatal assault among California adults aged 50 years and older from 2005 to 2022 – stratifying by age group, sex, and race and ethnicity – to characterize patterns among Multiracial older adults across the older age range and in both sexes.
+Violence against older adults is a growing public health concern. Between 2015 and 2022, U.S. emergency department visit rates for nonfatal assault among adults aged 60 years and older rose 31%, and homicide rates rose 26%, with an estimated annual economic cost of \$32.7 billion in 2022.[@peterson2024] Nationally, racial and ethnic disparities in nonfatal assault injury among older adults have been poorly characterized due to high levels of missing race and ethnicity data in the National Electronic Injury Surveillance System.[@logan2019] A recent analysis of assault injuries among women in California found that Multiracial women aged 65 years and older had the highest age-specific assault injury rates of any racial and ethnic group, exceeding Black women in this age range.[@liu2026] We built on this work by estimating rates of fatal and non-fatal assault among California adults aged 50 years and older from 2005 to 2022 – stratifying by age group, sex, and race and ethnicity – to characterize patterns among Multiracial older adults across the older age range and in both male and female sexes.
 
 # Methods
 
-We combined 2005-2022 statewide hospital discharge data from the California Department of Health Care Access and Information with death records from the California Department of Public Health for residents aged 50 years and older. Using the data infrastructure and case definition described in Liu et al.,[@liu2026] we identified fatal assault injuries from death records using ICD-10 external cause codes and non-fatal assault injuries from hospital records using ICD-9-CM external cause codes for events before October 2015 and ICD-10-CM external cause and diagnostic codes for events from October 2015 onward. To avoid double counting, we linked ED visits resulting in admission to their inpatient records and removed in-hospital deaths from the hospital data. We excluded records with missing age or race and ethnicity (\<5%). We classified race and ethnicity into six mutually exclusive groups: Hispanic (any race), and non-Hispanic American Indian or Alaska Native (AIAN), Asian or Pacific Islander (API), Black, Multiracial, and White. We categorized age into 5-year intervals from 50-54 through 85+. We calculated sex- and age-specific assault injury rates per 100,000 person-years using intercensal (2005-2009) and postcensal (2010-2022) California population estimates as denominators. Exact 95% Poisson confidence intervals were estimated using the epitools package in R.[@aragon2004] Use of these data was approved by the California Health and Human Services Agency and the University of California, Berkeley Committee for the Protection of Human Subjects.
+We combined 2005-2022 statewide hospital discharge data from the California Department of Health Care Access and Information with death records from the California Department of Public Health for residents aged 50 years and older. Using the data infrastructure and case definition described in Liu et al.,[@liu2026] we identified fatal assault injuries from death records using ICD-10 external cause codes and non-fatal assault injuries from hospital records using ICD-9-CM external cause codes for events before October 2015 and ICD-10-CM external cause and diagnostic codes for events from October 2015 onward. We de-duplicated emergency department, inpatient, and death data. We excluded records with missing age or race and ethnicity (\<5%). We classified race and ethnicity into six mutually exclusive groups: Hispanic (any race), and non-Hispanic American Indian or Alaska Native (AIAN), Asian or Pacific Islander (API), Black, Multiracial, and White. We categorized age into 5-year intervals from 50-54 through 85+. We calculated sex- and age-specific assault injury rates per 100,000 person-years using intercensal (2005-2009) and postcensal (2010-2022) California population estimates as denominators. Exact 95% Poisson confidence intervals were estimated using the epitools package in R.[@aragon2004] Use of these data was approved by the California Health and Human Services Agency and the University of California, Berkeley Committee for the Protection of Human Subjects.
 
 # Results
 
@@ -133,9 +133,9 @@ Assault injury rates among older Multiracial adults in California were elevated 
 
 Several mechanisms may contribute to this pattern. Multiracial adults experience elevated rates of social isolation,[@town2024] which is an established risk factor for elder mistreatment and late-life interpersonal violence.[@rosen2019] Multiracial individuals also frequently report identity invalidation and marginalization across multiple racial communities,[@franco2021] which may further weaken protective family and community ties as they age. These mechanisms warrant direct investigation in older Multiracial populations.
 
-This analysis had limitations. Hospital and death records capture only assault injuries severe enough to result in medical attention or death and do not capture non-medically-attended events. These data also do not include information on perpetrator identity or relational context, and findings should not be interpreted as estimates of elder abuse incidence.
+This analysis had strengths and limitations. We leveraged statewide data with a high degree of completeness and specificity over an 18-year period. The large Multiracial population in California facilitated description of important patterns in this group. However, hospital and death records capture only assault injuries severe enough to result in medical attention or death. Given lack of information on perpetrator identity or relational context, and findings should not be interpreted as estimates of elder abuse.
 
-As the older adult population grows and diversifies, research disaggregating Multiracial older adults is needed to understand the conditions shaping late-life assault injury risk and to inform prevention efforts.
+As the older adult population grows and diversifies, research disaggregating Multiracial older adults is needed to understand the conditions shaping assault injury risk and to inform prevention efforts.
 
 ```{=openxml}
 <w:p>
@@ -235,7 +235,7 @@ readRDS(here("03_results", "fig_rates.rds"))
 :::
 
 ::: {custom-style="Image Caption"}
-Shaded bands represent 95% confidence intervals. Abbreviations: AIAN = American Indian or Alaska Native; API = Asian or Pacific Islander.
+Shaded bands represent 95% confidence intervals. Abbreviations: NH = non-Hispanic; AIAN = American Indian or Alaska Native; API = Asian or Pacific Islander.
 :::
 
 ```{=openxml}

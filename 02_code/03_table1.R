@@ -43,7 +43,8 @@ header_labels <- list(Age = "Age group")
 
 footnote_text <- paste(
   "Abbreviations: AIAN = American Indian or Alaska Native;",
-  "API = Asian or Pacific Islander."
+  "API = Asian or Pacific Islander;",
+  "NH = non-Hispanic."
 )
 
 ft <- as_flextable(grouped, hide_grouplabel = TRUE) %>%
